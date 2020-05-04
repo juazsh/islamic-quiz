@@ -1,6 +1,12 @@
 <template>
   <div class="columns is-mobile is-centered">
+    
+
     <div class="column is-half quiz-box">
+      <div class="quiz-box-header">
+        <progress class="progress is-info is-large" value="25" max="100">75%</progress>
+        <span class="quiz-time">9:90</span>
+      </div>
       <div>
         <h3>1. Quran me total kitne Surahs hain? </h3>
       </div>
@@ -32,15 +38,25 @@ export default {
 <style scoped >
 .quiz-box{
     background: #060814;
-    height: 700px;
-    width: 500px;
+    /* height: 700px; */
+    /* //width: 500px; */
     border-radius: 20px;
     color: #fff;
     padding: 30px;
     font-family: 'Work Sans', sans-serif;
 }
+.quiz-box-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quiz-time{
+  width: 30%;
+  font-size: 40px;
+  text-align: center;
+}
 h3{
-  font-size: 40px
+  font-size: 48px
 }
 li{
   border: 2px solid #4B5F9E ;
